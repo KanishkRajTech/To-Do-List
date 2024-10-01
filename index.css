@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container_main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    width:inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+}
+.task_name {
+    font-size: 20px;
+    font-weight: 400;
+}
+.task_todo {
+    font-size: 18px;
+    line-height: 18px;
+    height: 30px;
+    padding: 10px;
+    border: 2px solid #141414;
+    background: #fff;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #888;
+    margin-bottom: 20px;
+}
+.submit {
+    border: 1px solid #ddd;
+    color: #888;
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    font-family: Lato, sans-serif;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.submit:hover {
+    background: #888;
+    color: #fff;
+}
+.task_show {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.incomplete_task, .complete_task {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.incomplete_task ol li, .complete_task ol li{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 30px;
+}
+.incomplete_task, .complete_task label{
+    font-size: 20px;
+}
+.edit_text{
+    font-size: 18px;
+    line-height: 18px;
+    height: 30px;
+    padding: 10px;
+    border: 2px solid #141414;
+    background: #fff;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #888;
+}
+.edit, .delete {
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.edit {
+    background-color: #4CAF50; 
+}
+
+.edit:hover {
+    background-color: #45a049;
+}
+
+.delete {
+    background-color: #f44336; 
+}
+
+.delete:hover {
+    background-color: #da190b; 
+}
+

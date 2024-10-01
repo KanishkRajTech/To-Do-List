@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container_main">
+        <div class="container">
+            <div class="heading">
+                <h1>To Do List</h1>
+            </div>
+            <hr style="width: 600px; height: 3px; background: #000; margin: 5px 0 20px 0;">
+            <div class="form">
+                <form class="form_box">
+                    <div class="task">
+                        <label for="task_name" class="task_name">Task Name</label>
+                        <input type="text" id="task_name" class="task_todo">
+                        <button type="button" class="submit">Add</button>
+                    </div>
+                </form>
+            </div>
+            <div class="task_show">
+                <div class="incomplete_task">
+                    <h2 class="heading">TODO</h2>
+                    <hr style="width: 600px; height: 3px; background: #000; margin: 20px 0 20px 0;">
+                    <ol class="incomplete_task_list"></ol>
+                </div>
+                <div class="complete_task">
+                    <h2 class="heading">Complete Task</h2>
+                    <hr style="width: 600px; height: 3px; background: #000; margin: 20px 0 20px 0;">
+                    <ol class="complete_task_list"></ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
